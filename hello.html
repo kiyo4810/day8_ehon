@@ -3,21 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>絵本からHello</title>
+    <title>絵本から - アラートほか</title>
   </head>
   <body>
     <input type="button" value="ボタン" onclick="alert('いらっしゃいませ')" />
     <input type="button" value="ボタン" id="button2" />
+    <input type="button" value="ボタン" id="button3" />
     <script type="text/javascript">
       window.document.write("hello,kiyo!");
-      window.alert("きをつけて！ってうそよん。\n\nアラートの練習1");
-      window.alert(`きをつけて！ってうそよん。
-      
-      アラートの練習2`);
+      window.document.write("こんにちは,きよ!");
+      // window.document.write("hello,kiyo!");
+
+      // window.alert("きをつけて！ってうそよん。\n\nアラートの練習1");
+      // window.alert(`きをつけて！ってうそよん。
+      // アラートの練習2`);
 
       window.document.getElementById("button2").addEventListener("click", function () {
         alert("おまえもがんばれよ！");
+        console.log(window);
+        console.log(window.getScreenDetails);
       });
+      document.getElementById("button3").addEventListener("dblclick", function () {
+        alert("ダブルクリックありがとな");
+      });
+      window.document.body.style.color = "red";
+      window.document.body.style.backgroundColor = "yellow";
+      document.getElementById("button2").style.backgroundColor = "blue";
+      window.resizeTo(500, 300); //新規に開いたページじゃないとリサイズ効かない
     </script>
   </body>
 </html>
