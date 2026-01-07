@@ -10,6 +10,7 @@ window.document.getElementById("button2").addEventListener("click", function () 
   alert("おまえもがんばれよ！");
   console.log(window);
   console.log(window.getScreenDetails);
+  console.log("ダブルクリック完了！");
 });
 document.getElementById("button3").addEventListener("dblclick", function () {
   alert("ダブルクリックありがとな");
